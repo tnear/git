@@ -1,0 +1,11 @@
+INIT
+git-init - Create an empty Git repository or reinitialize an existing one
+
+# Create an empty Git repository
+$ mkdir new_r
+$ cd new_r
+$ git init
+$ ls -a
+.git
+
+---
