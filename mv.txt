@@ -1,0 +1,21 @@
+MV
+
+git-mv - Move or rename a file, a directory, or a symlink
+
+# Rename file: file.txt to file_new.txt:
+$ git mv file.txt file_new.txt
+
+# Status will show 'renamed' status:
+$ git status
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    file.txt -> file_new.txt
+
+# Move file into sub-directory:
+$ mkdir newDirectory
+$ git mv file.txt newDirectory
+$ git status
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    file.txt -> newDirectory/file.txt
+---

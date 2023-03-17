@@ -1,0 +1,14 @@
+ADD
+
+git-add - Add file contents to the index
+
+# Add all changed files:
+$ git add -A
+
+# Add multiple files:
+$ git add file1.c file1.h file.out
+
+# Add all .c files:
+$ git add *.c
+
+---

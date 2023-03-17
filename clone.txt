@@ -1,0 +1,16 @@
+CLONE
+
+git-clone - Clone a repository into a new directory
+
+# Clones a repository. Navigate one folder up from where you want it.
+# This creates a directory with the name of the repository.
+
+# Clone using HTTPS:
+$ cd ~
+$ git clone https://github.com/tnear/git.git
+$ cd git
+
+# Clone using SSH:
+$ git clone git@github.com:tnear/git.git
+
+---

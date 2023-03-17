@@ -1,0 +1,11 @@
+COMMIT
+
+git-commit - Record changes to the repository
+
+# Commit with message (-m):
+$ commit -m "My changes"
+[main ffc81de] My changes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename file.txt => newDirectory/file.txt (100%)
+
+---
