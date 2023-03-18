@@ -1,6 +1,7 @@
 MV
 
 git-mv - Move or rename a file, a directory, or a symlink
+https://git-scm.com/docs/git-mv
 
 # Rename file: file.txt to file_new.txt:
 $ git mv file.txt file_new.txt

@@ -1,0 +1,36 @@
+DIFF
+
+git-diff - Show changes between commits, commit and working tree, etc
+https://git-scm.com/docs/git-diff
+
+$ git diff
+diff --git a/file.txt b/file.txt
+index ce01362..97531f3 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1 +1,2 @@
+ hello
++hello2
+
+Annotated output:
+a/file.txt:               version 'a' of file.txt
+b/file.txt:               version 'b' of file.txt
+index ce01362..97 100644: metadata
+--- a/file.txt:           version 'a' indicated by '-' symbol
++++ b/file.txt:           version 'b' indicated by '+' symbol
+@@ -1:                    '-' = version a, 1 = num times it appears below
++1,2 @@:                  '+' = version b, 2 = 2 different lines, 1 = starting line number
+
+
+# By default, git diff does NOT diff stages files:
+$ git add -A
+$ git diff
+<no output>
+
+# Diff staged files using '--cached':
+$ git diff --cached
+diff --git a/file.txt b/file.txt
+...
+
+
+---

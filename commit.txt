@@ -1,6 +1,7 @@
 COMMIT
 
 git-commit - Record changes to the repository
+https://git-scm.com/docs/git-commit
 
 # Commit with message (-m):
 $ commit -m "My changes"

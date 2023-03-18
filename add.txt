@@ -1,6 +1,7 @@
 ADD
 
 git-add - Add file contents to the index
+https://git-scm.com/docs/git-add
 
 # Add all changed files:
 $ git add -A

@@ -1,6 +1,7 @@
 STATUS
 
 git-status - Show the working tree status
+https://git-scm.com/docs/git-status
 
 # List differences you have made but not committed:
 $ git status

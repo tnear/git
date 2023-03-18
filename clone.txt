@@ -1,6 +1,7 @@
 CLONE
 
 git-clone - Clone a repository into a new directory
+https://git-scm.com/docs/git-clone
 
 # Clones a repository. Navigate one folder up from where you want it.
 # This creates a directory with the name of the repository.
