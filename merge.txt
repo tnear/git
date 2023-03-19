@@ -1,0 +1,6 @@
+MERGE
+
+git-merge - Join two or more development histories together
+https://git-scm.com/docs/git-merge
+
+---

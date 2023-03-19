@@ -1,0 +1,27 @@
+RESET
+
+git-reset - Reset current HEAD to the specified state
+https://git-scm.com/docs/git-reset
+
+Wipes out selected parts of commit history.
+More dangerous than 'git checkout' or 'git revert'.
+
+EXAMPLE:
+
+$ cat hello.txt
+hello
+hello2
+
+$ git log --oneline
+c3ba033 (HEAD -> main) hello2
+2d2b069 hello
+
+# Delete history up to (but not including) 2d2b069.
+# This undoes the 'hello2' change by deleting history.
+# It does NOT modify files.
+$ git reset 2d2b069
+
+$ cat hello.txt
+hello
+hello2
+---

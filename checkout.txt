@@ -1,0 +1,27 @@
+CHECKOUT
+
+git-checkout - Switch branches or restore working tree files
+https://git-scm.com/docs/git-checkout
+
+EXAMPLE:
+# Assume hello.txt was created with "hello" then appended with "hello2":
+$ cat hello.txt
+hello
+hello2
+
+$ git log --oneline
+39e07ac (HEAD -> main) hello2
+22f3e1c hello
+
+# Checkout older version by checksum:
+$ git checkout 22f3e1c
+$ cat hello.txt
+hello
+
+# Checkout by
+$ git checkout main
+
+$ cat hello.txt
+hello
+hello2
+---
