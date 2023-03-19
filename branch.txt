@@ -1,0 +1,22 @@
+BRANCH
+
+git-branch - List, create, or delete branches
+https://git-scm.com/docs/git-branch
+
+
+# Create branch:
+$ git branch myNewBranch
+
+# Show branches (no flags), '*' indicates current:
+$ git branch
+* main
+  myNewBranch
+
+# Switch to branch:
+$ git checkout myNewBranch
+
+# -d = delete branch (-D forces)
+$ git branch -d myNewBranch
+Deleted branch myNewBranch (was af242cb).
+
+---

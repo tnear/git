@@ -21,7 +21,14 @@ c3ba033 (HEAD -> main) hello2
 # It does NOT modify files.
 $ git reset 2d2b069
 
+# Show that changes are retained:
 $ cat hello.txt
 hello
 hello2
+
+# --hard = delete history AND delete local changes
+$ git reset 2d2b069 --hard
+
+$ cat hello.txt
+hello
 ---
