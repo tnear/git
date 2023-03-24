@@ -12,4 +12,10 @@ $ git add file1.c file1.h file.out
 # Add all .c files:
 $ git add *.c
 
+
+            New files   Modified  Deleted
+git add -A      x          x         x
+git add .       x          x
+git add -u                 x
+
 ---

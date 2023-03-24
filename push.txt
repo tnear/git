@@ -14,4 +14,9 @@ Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/tnear/git.git
    9208377..cb24eb1  main -> main
+
+
+# Upload to branch:
+$ git push origin <branch_name>
+
 ---
