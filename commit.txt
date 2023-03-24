@@ -9,7 +9,7 @@ $ commit -m "My changes"
  1 file changed, 0 insertions(+), 0 deletions(-)
  rename file.txt => newDirectory/file.txt (100%)
 
-# -a = commit all
+# -a = commit all (new files are NOT affected by -a)
 $ git commit -a -m "hello"
 [main 08809da] hello
  1 file changed, 1 insertion(+)

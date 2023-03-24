@@ -16,6 +16,9 @@ $ git branch
 $ git checkout myNewBranch
 
 # -d = delete branch (-D forces)
+# First, switch away from branch to be deleted (myNewBranch):
+$ git checkout main
+# Next: delete branch 'myNewBranch' using -d flag:
 $ git branch -d myNewBranch
 Deleted branch myNewBranch (was af242cb).
 

@@ -21,7 +21,11 @@ c3ba033 (HEAD -> main) hello2
 # It does NOT modify files.
 $ git reset 2d2b069
 
-# Show that changes are retained:
+# Show the deleted history:
+$ git log --oneline
+2d2b069 hello
+
+# Show that changes (addition of "hello2") are retained:
 $ cat hello.txt
 hello
 hello2
