@@ -3,11 +3,10 @@ CHECKOUT
 git-checkout - Switch branches or restore working tree files
 https://git-scm.com/docs/git-checkout
 
-EXAMPLE:
 # Switch branch:
 $ git checkout <branch_name>
 
-EXAMPLE: checkout older version
+# Checkout older version.
 # Assume hello.txt was created with "hello" then appended with "hello2":
 $ cat hello.txt
 hello

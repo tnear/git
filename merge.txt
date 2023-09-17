@@ -4,7 +4,7 @@ git-merge - Join two or more development histories together
 https://git-scm.com/docs/git-merge
 
 # Merge a branch into main.
-# First, checkout the branch you want to merge into:
+# First, checkout the branch you want to merge into (the destination branch):
 $ git checkout main
 
 # Next, merge the branch into main:
@@ -33,6 +33,7 @@ branch hello!
 # First, modify the file and save changes:
 $ vi hello.txt
 
+# Show the updated changes:
 $ cat hello.txt
 hello
 branch hello!
@@ -41,6 +42,9 @@ branch hello!
 $ git commit
 [main 4cee47f] Merge branch 'feature-c'
 
+# (Alternative way to continue a merge process):
+# $ git merge --continue
+
 # 'Merge branch now appears at top'
 $ git log --oneline
 4cee47f (HEAD -> main) Merge branch 'feature-c'
@@ -48,5 +52,8 @@ $ git log --oneline
 475c427 Added line 2
 64aa946 (myNewBranch) branch hello
 5323f9b hello
+
+# --abort = abort (cancel) the current conflict resolution process
+$ git merge --abort
 
 ---

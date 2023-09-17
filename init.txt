@@ -7,7 +7,13 @@ https://git-scm.com/docs/git-init
 $ mkdir new_repository
 $ cd new_repository
 $ git init
+Initialized empty Git repository in /tmp/work/.git/
+
 $ ls -a
 .git
+
+# Create file and add to repository:
+$ echo 'hello' > hello.txt
+$ git add hello.txt
 
 ---

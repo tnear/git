@@ -35,8 +35,9 @@ $ git log --graph
 |/
 * 64aa946 (myNewBranch) branch hello
 
-# -p = show diff (useful when also filtering):
+# -p, --patch = show diff (useful when also filtering):
 $ git log -p
+$ git log -p <hash>
 
 # Show history for a directory:
 $ git log myDir/
