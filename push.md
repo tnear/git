@@ -1,9 +1,11 @@
-PUSH
+# push
 
-git-push - Update remote refs along with associated objects
+`git-push` - Update remote refs along with associated objects
 
 Uploads local changes to remote repository
 
+## Basic usage
+```
 $ git push
 Enumerating objects: 7, done.
 Counting objects: 100% (7/7), done.
@@ -14,9 +16,19 @@ Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/tnear/git.git
    9208377..cb24eb1  main -> main
+```
 
-
-# Upload to branch:
+## Upload to branch
+```
 $ git push origin <branch_name>
+```
 
----
+## `-f, --force`
+Allows overwriting the remote branch with your local branch, even if they have diverged.
+
+```
+git push -f origin myBranch
+```
+
+## Resources
+- https://git-scm.com/docs/git-push

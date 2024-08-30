@@ -29,5 +29,15 @@ stash@{0}: On main: my third line
 stash@{1}: On main: my second line
 ```
 
+## Apply by index (number)
+Use `git stash apply n` where `n` is the index to apply:
+```
+$ git stash list
+stash@{0}: On main: my third line
+stash@{1}: On main: my second line
+
+$ git stash apply 1
+```
+
 ## Resources
 - https://git-scm.com/docs/git-stash
