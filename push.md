@@ -2,7 +2,7 @@
 
 `git-push` - Update remote refs along with associated objects
 
-Uploads local changes to remote repository
+Uploads local changes to remote repository.
 
 ## Basic usage
 ```
@@ -28,6 +28,21 @@ Allows overwriting the remote branch with your local branch, even if they have d
 
 ```
 git push -f origin myBranch
+```
+
+## Delete a branch
+Deleting a branch requires a `git push` to update the remote repository.
+
+```
+# First, switch away from branch to be deleted (branchToDelete)
+$ git checkout main
+
+# Next, delete branch 'branchToDelete' using -d flag
+$ git branch -d branchToDelete
+Deleted branch branchToDelete (was af242cb).
+
+# Lastly, push the deletion to the remote repository
+$ git push origin -delete branchToDelete
 ```
 
 ## Resources
