@@ -2,8 +2,19 @@
 
 git-config - Get and set repository or global options
 
-## Set name and email
-This is a required step for new installations of Git.
+## View all configs (including `user.email` and `user.name`)
+```
+git config --list
+```
+
+### View specific config
+```
+git config <configName>
+git config user.name
+```
+
+## Set name and email (globally)
+This is a required step for new installations of Git. Remove the `--global` flag to configure locally.
 
 ```
 > git config --global user.email "see here: https://github.com/settings/emails"
