@@ -1,12 +1,15 @@
-CHECKOUT
+# checkout
 
-git-checkout - Switch branches or restore working tree files
+`git-checkout` - Switch branches or restore working tree files
 https://git-scm.com/docs/git-checkout
 
-# Switch branch:
+## Checkout branch
+```
 $ git checkout <branch_name>
+```
 
-# Checkout older version.
+## Checkout older version
+```
 # Assume hello.txt was created with "hello" then appended with "hello2":
 $ cat hello.txt
 hello
@@ -31,13 +34,15 @@ $ git checkout main
 $ cat hello.txt
 hello
 hello2
+```
 
-
-# -b = create new branch (and checkout)
+## Create branch
+Use `-b` to create new branch (and checkout)
+```
 $ git checkout -b myNewBranch
 Switched to a new branch 'myNewBranch'
+
 $ git branch  # Verify myNewBranch was created and is active
   main
 * myNewBranch
-
----
+```

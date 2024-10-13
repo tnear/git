@@ -1,12 +1,12 @@
-REVERT
+# revert
 
-git-revert - Revert some existing commits
+`git-revert` - Revert some existing commits
 https://git-scm.com/docs/git-revert
 
-Revert adds a NEW commit which UNDOES a previous commit.
-Unlike 'git checkout', you can make additional changes after reverting.
+Revert adds a *new* commit which *undoes* a previous commit. Unlike `git checkout`, you can make additional changes after reverting.
 
-EXAMPLE:
+## Example
+```
 # Assume hello.txt was created with "hello" then appended with "hello2":
 $ cat hello.txt
 hello
@@ -28,5 +28,4 @@ $ git log --oneline
 ac8e310 (HEAD -> main) Revert "hello2"
 39e07ac hello2
 22f3e1c hello
-
----
+```

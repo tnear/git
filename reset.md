@@ -1,20 +1,23 @@
-RESET
+# reset
 
-git-reset - Reset current HEAD to the specified state
+`git-reset` - Reset current HEAD to the specified state
 https://git-scm.com/docs/git-reset
 
-
-# Unstage all files:
+## Unstage all files
+```
 $ git reset
 Unstaged changes after reset:
 M       hello.txt
 M       hello2.txt
+```
 
-# Revert all modified files (loses changes):
+## Revert all modified files (warning: loses changes)
+```
 $ git reset --hard
+```
 
-EXAMPLE:
-
+Example:
+```
 $ cat hello.txt
 hello
 hello2
@@ -37,7 +40,6 @@ $ cat hello.txt
 hello
 hello2
 
-
 # --hard = delete history AND delete local changes
 # --hard can wipe out selected parts of commit history.
 # More dangerous than 'git checkout' or 'git revert':
@@ -46,5 +48,4 @@ $ git reset 2d2b069 --hard
 # Show that file changes are also gone:
 $ cat hello.txt
 hello
-
----
+```

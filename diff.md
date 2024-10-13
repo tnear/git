@@ -1,9 +1,10 @@
-DIFF
+# diff
 
-git-diff - Show changes between commits, commit and working tree, etc
+`git-diff` - Show changes between commits, commit and working tree, etc
 https://git-scm.com/docs/git-diff
 
-# Diff all unstaged files:
+## Diff all unstaged files
+```
 $ git diff
 diff --git a/file.txt b/file.txt
 index ce01362..97531f3 100644
@@ -12,8 +13,10 @@ index ce01362..97531f3 100644
 @@ -1 +1,2 @@
  hello
 +hello2
+```
 
-Annotated git diff output:
+Annotated git diff output
+```
 a/file.txt:               version 'a' of file.txt (older)
 b/file.txt:               version 'b' of file.txt (newer)
 index ce01362..97 100644: metadata
@@ -21,19 +24,28 @@ index ce01362..97 100644: metadata
 +++ b/file.txt:           version 'b' denoted by '+' symbol
 @@ -1:                    '-' = version a, 1 = num times it appears below
 +1,2 @@:                  '+' = version b, 2 = 2 different lines, 1 = starting line number
+```
 
-# Diff one file:
+## Diff one file
+```
 $ git diff <file_name>
+```
 
-# By default, git diff does NOT diff stages files:
+## Diff staged files
+By default, git diff does NOT diff stages files:
+```
 $ git add -A
 $ git diff
 <no output>
+```
 
-# Diff staged files using '--cached':
+Diff staged files using '--cached':
+```
 $ git diff --cached
+```
 
-# Diff two different commits using <id1>..<id2>.
+## Diff two different commits using `<checksum1>..<checksum2>`
+```
 # First, get history:
 $ git log --oneline
 475c427 Added line 2
@@ -49,5 +61,4 @@ $ git diff --compact-summary
  hello.txt  | 1 +
  hello2.txt | 1 +
  2 files changed, 2 insertions(+)
-
----
+```

@@ -1,28 +1,39 @@
-BISECT
+# bisect
 
-git-bisect - Use binary search to find the commit that introduced a bug
+`git-bisect` - Use binary search to find the commit that introduced a bug.
 https://git-scm.com/docs/git-bisect
 
-# Start by showing history:
+## Workflow
+## #Start by showing history
+```
 $ git log --oneline
 4cee47f (HEAD -> main) Merge branch 'feature-c'
 7031fb6 (feature-c) Added branch line2
 475c427 Added line 2
 64aa946 (myNewBranch) branch hello
 5323f9b hello
+```
 
-# Start bisect:
+### Start bisect
+```
 $ git bisect start
+```
 
-# Tell bisect a known bad state. Assume latest (HEAD) is bad:
+### Tell bisect a known bad state. Assume latest (HEAD) is bad
+```
 $ git bisect bad HEAD
+```
 
-# Assume first submit (5323f9b) is a good state:
+### Assume first submit (5323f9b) is a good state
+```
 $ git bisect good 5323f9b
 
 Bisecting: 1 revision left to test after this (roughly 1 step)
 [475c42743ddfde1cc7d305731fd638f25a835e02] Added line 2
+```
 
+### Bisection
+```
 # Bisect has now checked out a change for you to verify.
 # Note how the top two entries from history are gone:
 $ git log --oneline
@@ -47,5 +58,4 @@ commit 475c42743ddfde1cc7d305731fd638f25a835e02
 
 # When done, let bisect know using 'reset':
 $ git bisect reset
-
----
+```

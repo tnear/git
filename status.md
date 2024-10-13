@@ -1,9 +1,10 @@
-STATUS
+# status
 
-git-status - Show the working tree status
+`git-status` - Show the working tree status
 https://git-scm.com/docs/git-status
 
-# List differences you have made but not committed:
+## List differences you have made but not committed
+```
 $ git status
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -16,8 +17,12 @@ Untracked files:
         status.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
+```
 
-# Common alias for 'git status', set via: alias gs='git status':
+## Common alias `gs`
+A common alias for 'git status' is `gs`
+
+```
+$ alias gs='git status'
 $ gs
-
----
+```
