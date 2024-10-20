@@ -1,6 +1,6 @@
 # config
 
-git-config - Get and set repository or global options
+`git-config` - Get and set repository or global options
 
 ## View all configs (including `user.email` and `user.name`)
 ```
@@ -17,8 +17,8 @@ git config user.name
 This is a required step for new installations of Git. Remove the `--global` flag to configure locally.
 
 ```
-> git config --global user.email "see here: https://github.com/settings/emails"
-> PS C:\repos\PowerShell> git config --global user.name "Your Name"
+> git config --global user.email 'see here: https://github.com/settings/emails'
+> git config --global user.name 'Your Name'
 ```
 
 ## Disable pager for `git branch`

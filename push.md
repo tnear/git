@@ -5,8 +5,9 @@
 Uploads local changes to remote repository.
 
 ## Basic usage
-```
+```bash
 $ git push
+
 Enumerating objects: 7, done.
 Counting objects: 100% (7/7), done.
 Delta compression using up to 4 threads

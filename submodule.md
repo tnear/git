@@ -1,6 +1,6 @@
 # submodule
 
-git-submodule - Initialize, update or inspect submodules
+`git-submodule` - Initialize, update or inspect submodules
 
 A submodule is a git repository which is a sub-directory of another git repository.
 

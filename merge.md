@@ -1,7 +1,6 @@
 # merge
 
 `git-merge` - Join two or more development histories together
-https://git-scm.com/docs/git-merge
 
 ## Merge a branch into main
 ```
@@ -18,7 +17,7 @@ Fast-forward
 ```
 
 ## Conflicts cause errors
-```
+```bash
 $ git merge feature-c
 Auto-merging hello.txt
 CONFLICT (content): Merge conflict in hello.txt
@@ -26,7 +25,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 # This modifies the file(s) in question:
 hello
-<<<<<<< HEAD
+<<<<<< HEAD
 main hello!
 =======
 branch hello!
@@ -72,3 +71,6 @@ git pull
 git switch featureBranch
 git merge main # merge main into your feature branch
 ```
+
+## Resources
+- https://git-scm.com/docs/git-merge

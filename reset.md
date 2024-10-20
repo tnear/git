@@ -1,7 +1,6 @@
 # reset
 
 `git-reset` - Reset current HEAD to the specified state
-https://git-scm.com/docs/git-reset
 
 ## Unstage all files
 ```
@@ -49,3 +48,6 @@ $ git reset 2d2b069 --hard
 $ cat hello.txt
 hello
 ```
+
+## Resources
+- https://git-scm.com/docs/git-reset

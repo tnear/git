@@ -1,10 +1,10 @@
 # grep
 
-git-grep - Print lines matching a pattern
+`git-grep` - Print lines matching a pattern
 
 ## Search all branches
 ```
-git rev-list --all | xargs git grep "string/regexp"
+git rev-list --all | xargs git grep 'string/regexp'
 ```
 
 ## Resources

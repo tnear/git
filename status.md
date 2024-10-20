@@ -1,7 +1,6 @@
 # status
 
 `git-status` - Show the working tree status
-https://git-scm.com/docs/git-status
 
 ## List differences you have made but not committed
 ```
@@ -26,3 +25,6 @@ A common alias for 'git status' is `gs`
 $ alias gs='git status'
 $ gs
 ```
+
+## Resources
+- https://git-scm.com/docs/git-status

@@ -1,15 +1,13 @@
 # clone
 
 `git-clone` - Clone a repository into a new directory
-https://git-scm.com/docs/git-clone
 
 ## Syntax
+Clones a repository. Navigate one folder up from where you want it.
+
 ```
 $ git clone remote_repository_location
 $ git clone remote_repository_location path/to/directory
-
-# Clones a repository. Navigate one folder up from where you want it.
-# This creates a directory with the name of the repository.
 ```
 
 ## Clone using HTTPS
@@ -23,3 +21,6 @@ $ cd git
 ```
 $ git clone git@github.com:tnear/git.git
 ```
+
+## Resources
+- https://git-scm.com/docs/git-clone

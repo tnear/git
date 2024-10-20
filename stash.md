@@ -1,13 +1,13 @@
 # stash
 
-git-stash - Stash the changes in a dirty working directory away
+`git-stash` - Stash the changes in a dirty working directory away
 
 `git stash` is useful for saving changes locally without committing anything.
 
 ## Create stash
 Using the `-u` flag is recommended because it includes untracked files.
-```
-# create stash (this saves changes elsewhere and reverts your changes
+```bash
+# create stash (this saves changes locally and reverts your changes)
 git stash -u
 
 # apply the stash. this does not delete the stash

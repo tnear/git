@@ -1,7 +1,6 @@
 # diff
 
 `git-diff` - Show changes between commits, commit and working tree, etc
-https://git-scm.com/docs/git-diff
 
 ## Diff all unstaged files
 ```
@@ -32,7 +31,7 @@ $ git diff <file_name>
 ```
 
 ## Diff staged files
-By default, git diff does NOT diff stages files:
+By default, git diff does not diff stages files:
 ```
 $ git add -A
 $ git diff
@@ -62,3 +61,6 @@ $ git diff --compact-summary
  hello2.txt | 1 +
  2 files changed, 2 insertions(+)
 ```
+
+## Resources
+- https://git-scm.com/docs/git-diff

@@ -1,7 +1,6 @@
 # revert
 
 `git-revert` - Revert some existing commits
-https://git-scm.com/docs/git-revert
 
 Revert adds a *new* commit which *undoes* a previous commit. Unlike `git checkout`, you can make additional changes after reverting.
 
@@ -29,3 +28,6 @@ ac8e310 (HEAD -> main) Revert "hello2"
 39e07ac hello2
 22f3e1c hello
 ```
+
+## Resources
+- https://git-scm.com/docs/git-revert

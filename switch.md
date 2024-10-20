@@ -1,6 +1,6 @@
 # switch
 
-git-switch - Switch branches
+`git-switch` - Switch branches
 
 ## Switch branch
 ```
@@ -18,7 +18,7 @@ Switched to branch 'newBranch'
 ```
 
 ## Create branch and switch
-Use the `-c` (create) flag to create a branch and change to it.
+Use the `-c, --create` flag to create a branch and change to it.
 
 ```
 $ git switch -c anotherNewBranch

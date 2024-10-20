@@ -1,7 +1,6 @@
 # help
 
 `git-help` - Display help information about Git
-https://git-scm.com/docs/git-help
 
 ## List common commands
 ```
@@ -12,3 +11,6 @@ $ git help
 ```
 $ git help init
 ```
+
+## Resources
+- https://git-scm.com/docs/git-help

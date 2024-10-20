@@ -1,6 +1,6 @@
 # add
 
-`git-add` - Add file contents to the index. https://git-scm.com/docs/git-add
+`git-add` - Add file contents to the index.
 
 ## -A = add all changed files
 ```
@@ -24,3 +24,6 @@ git add -A      x          x         x
 git add .       x          x
 git add -u                 x
 ```
+
+## Resources
+- https://git-scm.com/docs/git-add

@@ -1,7 +1,6 @@
 # checkout
 
 `git-checkout` - Switch branches or restore working tree files
-https://git-scm.com/docs/git-checkout
 
 ## Checkout branch
 ```
@@ -46,3 +45,6 @@ $ git branch  # Verify myNewBranch was created and is active
   main
 * myNewBranch
 ```
+
+## Resources
+- https://git-scm.com/docs/git-checkout

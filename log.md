@@ -1,8 +1,9 @@
-LOG
+# log
 
-git-log - Show commit logs
-https://git-scm.com/docs/git-log
+`git-log` - Show commit logs
 
+## Show repository log
+```
 # Show full repository log:
 $ git log
 
@@ -12,9 +13,10 @@ $ git log --oneline
 # Show history for a file:
 $ git log <file>
 $ git log --oneline <file>
+```
 
-
-# Show history for a branch:
+## Show history for a branch
+```
 $ git log <branch_name>
 
 # Limit date range:
@@ -24,8 +26,10 @@ $ git log --before={2023-03-25} --after={2023-03-18}
 # Note: grep here does not supported extended-regexp (e.g., no '\d' or '{2}'):
 $ git log --grep='[0-9][0-9]' --oneline
 87bf03d (HEAD -> main) Adding 123 file 5
+```
 
-# Draw textual graph of commit history:
+### Draw textual graph of commit history
+```
 $ git log --graph
 * 87bf03d (HEAD -> main) Adding 123 file 5
 *   4cee47f Merge branch 'feature-c'
@@ -41,8 +45,13 @@ $ git log -p <hash>
 
 # Show history for a directory:
 $ git log myDir/
+```
 
+### Show most recent commits
+```
 # Show 3 most recent commits:
 $ git log -3
+```
 
----
+## Resources
+- https://git-scm.com/docs/git-log

@@ -2,8 +2,10 @@
 
 `git-branch` - List, create, or delete branches
 
+See also: [git switch](switch.md).
+
 ## Show branches (no flags)
-The '*' symbol indicates the current branch.
+The `*` symbol indicates the current branch.
 ```
 $ git branch
 * main
@@ -40,7 +42,7 @@ $ git push origin --delete branchToDelete
 ## Verbose output
 Use `-v, --verbose` for verbose output.
 ```
-$ git branch -v                                                 
+$ git branch -v
 * main 33bed56 push (-f), rebase, stash (apply index)
 ```
 
