@@ -62,5 +62,18 @@ $ git diff --compact-summary
  2 files changed, 2 insertions(+)
 ```
 
+## Show number of lines changed
+Use the `--shortstat` flag.
+
+```bash
+# to include untracked files, add all files first
+git add .
+
+# use --cached to count untracked (new) files
+git diff --shortstat --cached
+
+ 13 files changed, 403 insertions(+), 1 deletion(-)
+```
+
 ## Resources
 - https://git-scm.com/docs/git-diff

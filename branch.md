@@ -56,5 +56,17 @@ $ git branch -a
   remotes/origin/experimental
 ```
 
+## List all remote branches
+Use `-r, --remotes` to list all remote branches.
+```
+$ git branch --remotes
+  origin/HEAD -> origin/master
+  origin/master
+  origin/user1/dev
+  origin/user2/bug_fix
+```
+
+You can checkout a remote branch using `git checkout origin/user1/dev`.
+
 ## Resources
 - https://git-scm.com/docs/git-branch

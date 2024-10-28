@@ -3,6 +3,7 @@
 `git-reset` - Reset current HEAD to the specified state
 
 ## Unstage all files
+Use `git reset` to unstage all files. This command is safe and no data is lost.
 ```
 $ git reset
 Unstaged changes after reset:
