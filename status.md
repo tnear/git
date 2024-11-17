@@ -26,5 +26,17 @@ $ alias gs='git status'
 $ gs
 ```
 
+## Short summary
+Use the `-s, --short` flag to see a short summary:
+
+```bash
+$ git status -s
+ M status.md
+?? new_file.md
+```
+
+- ` M`: modified
+- `??`: untracked file
+
 ## Resources
 - https://git-scm.com/docs/git-status
