@@ -31,7 +31,7 @@ $ git diff <file_name>
 ```
 
 ## Diff staged files
-By default, git diff does not diff stages files:
+By default, `git diff` does not diff stages files:
 ```
 $ git add -A
 $ git diff
