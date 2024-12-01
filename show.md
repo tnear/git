@@ -23,7 +23,7 @@ Use `git show <checksum>` or `git show HEAD~#` where `#` is the number of commit
 
 ```
 $ git show ca6d6e7
-$ git show HEAD~2
+$ git show HEAD~2 # show two commits before HEAD
 ```
 
 ## Resources
