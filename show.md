@@ -26,5 +26,12 @@ $ git show ca6d6e7
 $ git show HEAD~2 # show two commits before HEAD
 ```
 
+## Show stats, such as lines of code, for a commit
+```
+$ git show <commit_id> --shortstat
+
+3 files changed, 115 insertions(+), 53 deletions(-)
+```
+
 ## Resources
 - https://git-scm.com/docs/git-show

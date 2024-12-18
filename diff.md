@@ -62,7 +62,7 @@ $ git diff --compact-summary
  2 files changed, 2 insertions(+)
 ```
 
-## Show number of lines changed
+## Show number of lines of code changed
 Use the `--shortstat` flag.
 
 ```bash
