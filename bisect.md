@@ -4,7 +4,7 @@
 
 ## Workflow
 ### Start by showing history
-```
+```bash
 $ git log --oneline
 4cee47f (HEAD -> main) Merge branch 'feature-c'
 7031fb6 (feature-c) Added branch line2
@@ -14,17 +14,17 @@ $ git log --oneline
 ```
 
 ### Start bisect
-```
+```bash
 $ git bisect start
 ```
 
 ### Tell bisect a known bad state. Assume latest (HEAD) is bad
-```
+```bash
 $ git bisect bad HEAD
 ```
 
 ### Assume first submit (5323f9b) is a good state
-```
+```bash
 $ git bisect good 5323f9b
 
 Bisecting: 1 revision left to test after this (roughly 1 step)
@@ -32,7 +32,7 @@ Bisecting: 1 revision left to test after this (roughly 1 step)
 ```
 
 ### Bisection
-```
+```bash
 # Bisect has now checked out a change for you to verify.
 # Note how the top two entries from history are gone:
 $ git log --oneline

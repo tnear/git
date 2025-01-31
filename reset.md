@@ -12,12 +12,12 @@ M       hello2.txt
 ```
 
 ## Revert all modified files (warning: loses changes)
-```
+```bash
 $ git reset --hard
 ```
 
 Example:
-```
+```bash
 $ cat hello.txt
 hello
 hello2

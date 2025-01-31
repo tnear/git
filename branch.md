@@ -6,19 +6,19 @@ See also: [git switch](switch.md).
 
 ## Show branches (no flags)
 The `*` symbol indicates the current branch.
-```
+```bash
 $ git branch
 * main
   myNewBranch
 ```
 
 ## Create branch
-```
+```bash
 $ git branch myNewBranch
 ```
 
 ## Switch to branch
-```
+```bash
 $ git checkout myNewBranch
 # or
 $ git switch myNewBranch
@@ -27,7 +27,7 @@ $ git switch myNewBranch
 ## Delete branch
 Use the `-d` flag to delete a branch (`-D` forces).
 
-```
+```bash
 # First, switch away from branch to be deleted (branchToDelete)
 $ git checkout main
 
@@ -41,14 +41,14 @@ $ git push origin --delete branchToDelete
 
 ## Verbose output
 Use `-v, --verbose` for verbose output.
-```
+```bash
 $ git branch -v
 * main 33bed56 push (-f), rebase, stash (apply index)
 ```
 
 ## Show all repositories
 Use `-a` to show all repositories, including ones which have not been checked out.
-```
+```bash
 $ git branch -a
 * master
   remotes/origin/HEAD -> origin/master
@@ -58,7 +58,7 @@ $ git branch -a
 
 ## List all remote branches
 Use `-r, --remotes` to list all remote branches.
-```
+```bash
 $ git branch --remotes
   origin/HEAD -> origin/master
   origin/master

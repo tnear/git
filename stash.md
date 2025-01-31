@@ -17,13 +17,13 @@ git stash apply
 ## Create stash with name
 This is a useful way to identify what a stash contains. Use the `-m` flag to add a message.
 
-```
+```bash
 git stash -u -m 'my stash'
 ```
 
 ## List stashes
 `git stash list` lists all stashes. The newest stashes are listed at the top with the lowest index number.
-```
+```bash
 $ git stash list
 stash@{0}: On main: my third line
 stash@{1}: On main: my second line
@@ -31,7 +31,7 @@ stash@{1}: On main: my second line
 
 ## Apply by index (number)
 Use `git stash apply n` where `n` is the index to apply:
-```
+```bash
 $ git stash list
 stash@{0}: On main: my third line
 stash@{1}: On main: my second line

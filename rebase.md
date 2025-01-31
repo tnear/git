@@ -11,7 +11,7 @@
 Rebase should be done after committing but before pushing changes.
 
 ## Rebase main on top of your feature branch
-```
+```bash
 git switch feature_branch
 git rebase main  # or git rebase origin/main
 # <resolve conflicts>
@@ -22,6 +22,13 @@ git status  # will indicate if rebasing is done
 ```
 
 Specifying `origin` can potentially pick up newer changes than are saved locally in your repository.
+
+### Alt syntax when above doesn't work
+```bash
+git fetch origin
+git rebase origin/master
+git push -f origin HEAD    # force push your rebased branch
+```
 
 ## `--abort`
 To undo everything, run `git rebase --abort`.

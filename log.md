@@ -3,7 +3,7 @@
 `git-log` - Show commit logs
 
 ## Show repository log
-```
+```bash
 # Show full repository log:
 $ git log
 
@@ -16,7 +16,7 @@ $ git log --oneline <file>
 ```
 
 ## Show history for a branch
-```
+```bash
 $ git log <branch_name>
 
 # Limit date range:
@@ -29,7 +29,7 @@ $ git log --grep='[0-9][0-9]' --oneline
 ```
 
 ### Draw textual graph of commit history
-```
+```bash
 $ git log --graph
 * 87bf03d (HEAD -> main) Adding 123 file 5
 *   4cee47f Merge branch 'feature-c'
@@ -42,7 +42,7 @@ $ git log --graph
 
 ## Show log with changes (patches)
 Use `-p, --patch` to show diff with patches (useful when also filtering):
-```
+```bash
 $ git log -p
 $ git log -p <hash>
 
@@ -56,12 +56,12 @@ index f2cfba8..7dbc3f7 100644
 ```
 
 ## Show history for a directory
-```
+```bash
 $ git log myDir/
 ```
 
 ## Show most recent commits
-```
+```bash
 # Show 3 most recent commits:
 $ git log -3
 ```

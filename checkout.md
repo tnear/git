@@ -3,12 +3,12 @@
 `git-checkout` - Switch branches or restore working tree files
 
 ## Checkout branch
-```
+```bash
 $ git checkout <branch_name>
 ```
 
 ## Checkout older version
-```
+```bash
 # Assume hello.txt was created with "hello" then appended with "hello2":
 $ cat hello.txt
 hello
@@ -37,7 +37,7 @@ hello2
 
 ## Create branch
 Use `-b` to create new branch (and checkout)
-```
+```bash
 $ git checkout -b myNewBranch
 Switched to a new branch 'myNewBranch'
 

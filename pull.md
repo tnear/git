@@ -7,12 +7,12 @@
 ## Pull with rebase (recommended to try first)
 This will set aside your changes, rebase with a branch, then replay your changes. This is similar to a regular [rebase](rebase.md). If someone else has committed to your branch, this helps to retain a cleaner, linear history.
 
-```
+```bash
 $ git pull --rebase
 ```
 
 ## Regular pull
-```
+```bash
 $ git pull
 ```
 

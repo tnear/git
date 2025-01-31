@@ -3,7 +3,7 @@
 `git-merge` - Join two or more development histories together
 
 ## Merge a branch into main
-```
+```bash
 # First, checkout the branch you want to merge into (the destination branch):
 $ git checkout main
 
@@ -56,7 +56,7 @@ $ git log --oneline
 ```
 
 ## Abort a merge
-```
+```bash
 # --abort = abort (cancel) the current conflict resolution process
 $ git merge --abort
 ```

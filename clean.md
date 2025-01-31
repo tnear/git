@@ -4,7 +4,7 @@
 
 ## Dry run
 Use the `-n, --dry-run` flag to see what git would remove:
-```
+```bash
 $ git clean --dry-run
 Would remove clean.md
 Would remove ls-tree.md

@@ -3,7 +3,7 @@
 `git-grep` - Print lines matching a pattern
 
 ## Search all branches
-```
+```bash
 git rev-list --all | xargs git grep 'string/regexp'
 ```
 

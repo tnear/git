@@ -10,7 +10,7 @@ origin
 
 ## Verbose
 Use `-v` to see verbose output.
-```
+```bash
 $ git remote -v
 origin  https://github.com/tnear/git.git (fetch)
 origin  https://github.com/tnear/git.git (push)

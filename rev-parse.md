@@ -5,7 +5,7 @@
 ## Get root directory
 To get the root directory of a git repository, use the `--show-toplevel` flag:
 
-```
+```bash
 $ git rev-parse --show-toplevel
 /Users/me/myRepository
 ```

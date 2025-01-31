@@ -21,7 +21,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ## Common alias `gs`
 A common alias for 'git status' is `gs`
 
-```
+```bash
 $ alias gs='git status'
 $ gs
 ```

@@ -21,13 +21,13 @@ index 0000000..58cbbb2
 ## Show a particular commit
 Use `git show <checksum>` or `git show HEAD~#` where `#` is the number of commits to go back.
 
-```
+```bash
 $ git show ca6d6e7
 $ git show HEAD~2 # show two commits before HEAD
 ```
 
 ## Show stats, such as lines of code, for a commit
-```
+```bash
 $ git show <commit_id> --shortstat
 
 3 files changed, 115 insertions(+), 53 deletions(-)

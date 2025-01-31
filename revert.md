@@ -5,7 +5,7 @@
 Revert adds a *new* commit which *undoes* a previous commit. Unlike `git checkout`, you can make additional changes after reverting.
 
 ## Example
-```
+```bash
 # Assume hello.txt was created with "hello" then appended with "hello2":
 $ cat hello.txt
 hello

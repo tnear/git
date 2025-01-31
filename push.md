@@ -20,21 +20,21 @@ To https://github.com/tnear/git.git
 ```
 
 ## Upload to branch
-```
+```bash
 $ git push origin <branch_name>
 ```
 
 ## `-f, --force`
 Allows overwriting the remote branch with your local branch, even if they have diverged.
 
-```
+```bash
 git push -f origin myBranch
 ```
 
 ## Delete a branch
 Deleting a branch requires a `git push` to update the remote repository.
 
-```
+```bash
 # First, switch away from branch to be deleted (branchToDelete)
 $ git checkout main
 

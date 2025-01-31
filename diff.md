@@ -26,25 +26,25 @@ index ce01362..97 100644: metadata
 ```
 
 ## Diff one file
-```
+```bash
 $ git diff <file_name>
 ```
 
 ## Diff staged files
 By default, `git diff` does not diff stages files:
-```
+```bash
 $ git add -A
 $ git diff
 <no output>
 ```
 
 Diff staged files using '--cached':
-```
+```bash
 $ git diff --cached
 ```
 
 ## Diff two different commits using `<checksum1>..<checksum2>`
-```
+```bash
 # First, get history:
 $ git log --oneline
 475c427 Added line 2
