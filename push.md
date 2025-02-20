@@ -31,6 +31,15 @@ Allows overwriting the remote branch with your local branch, even if they have d
 git push -f origin myBranch
 ```
 
+### `--force-with-lease`
+This flag allows force pushing changes to a remote branch, but only if the remote branch is in the state you expect. This prevents accidental overwriting of changes made by others.
+
+It can be useful after [rebasing](rebase.md).
+
+```bash
+git push --force-with-lease
+```
+
 ## Delete a branch
 Deleting a branch requires a `git push` to update the remote repository.
 

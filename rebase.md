@@ -19,6 +19,7 @@ git add <file_with_fixed_conflict>
 git rebase --continue  # continue after resolving conflict
 # <finish conflicts>
 git status  # will indicate if rebasing is done
+git push --force-with-lease # push changes when rebase is done
 ```
 
 Specifying `origin` can potentially pick up newer changes than are saved locally in your repository.

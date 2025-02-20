@@ -50,12 +50,14 @@ $ git log --oneline
 475c427 Added line 2
 64aa946 (myNewBranch) branch hello
 
-# Then, diff the two checksums separated by '..':
+# Then, diff the two checksums using '..':
 $ git diff 475c427..64aa946
 +hello
 -main hello!
+```
 
-# Compact-summary:
+## Compact-summary
+```bash
 $ git diff --compact-summary
  hello.txt  | 1 +
  hello2.txt | 1 +
@@ -69,10 +71,16 @@ Use the `--shortstat` flag.
 # to include untracked files, add all files first
 git add .
 
-# use --cached to count untracked (new) files
+# use --cached to include untracked (new) files
 git diff --shortstat --cached
 
  13 files changed, 403 insertions(+), 1 deletion(-)
+```
+
+## Diff a file with particular branch
+```bash
+# diff a file with main
+git diff main -- path/to/file
 ```
 
 ## Resources
