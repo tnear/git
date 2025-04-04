@@ -46,5 +46,15 @@ $ git branch  # Verify myNewBranch was created and is active
 * myNewBranch
 ```
 
+## Checking out tags
+Checking out a tag puts your repository in a 'detached HEAD' state. See [`git tag`](tag.md) for more information.
+
+```bash
+$ git checkout v2.0.0
+
+# undo operation when done
+$ git switch -
+```
+
 ## Resources
 - https://git-scm.com/docs/git-checkout
