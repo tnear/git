@@ -83,5 +83,13 @@ git diff --shortstat --cached
 git diff main -- path/to/file
 ```
 
+## Remove `a/` and `b/` prefixes
+```bash
+git diff --no-prefix path/to/file
+
+# also prefixes and `index` line (useful for patches)
+git diff --no-prefix my/file.txt | sed '/^index /d' > my.patch
+```
+
 ## Resources
 - https://git-scm.com/docs/git-diff

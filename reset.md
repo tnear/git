@@ -11,7 +11,7 @@ M       hello.txt
 M       hello2.txt
 ```
 
-## Revert all modified files (warning: loses changes)
+## Revert all modified files (**WARNING**: loses changes)
 ```bash
 $ git reset --hard
 $ git reset --hard origin/main # reset specified branch
