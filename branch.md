@@ -35,7 +35,7 @@ $ git checkout main
 $ git branch -d branchToDelete
 Deleted branch branchToDelete (was af242cb).
 
-# Lastly, push the deletion to the remote repository
+# (optional) push the deletion to the remote repository
 $ git push origin --delete branchToDelete
 ```
 

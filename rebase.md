@@ -32,7 +32,7 @@ git push -f origin HEAD    # force push your rebased branch
 ```
 
 ## `--abort`
-To undo everything, run `git rebase --abort`.
+To undo/cancel everything, run `git rebase --abort`.
 
 ## Resources
 - https://git-scm.com/docs/git-rebase

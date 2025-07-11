@@ -46,6 +46,16 @@ $ git checkout v2.0.0
 $ git switch -
 ```
 
+## Get date of a tag name
+```bash
+# tag name here is 1.0.401
+$ git --no-pager log -1 --format=%ad --date=short 1.0.401
+2025-05-16
+```
+
+- `--no-pager`: optional flag to prevent paging
+
+
 ## Resources
 - https://git-scm.com/docs/git-tag
 - https://git-scm.com/book/en/v2/Git-Basics-Tagging
