@@ -34,6 +34,20 @@ git push -f origin HEAD    # force push your rebased branch
 ## `--abort`
 To undo/cancel everything, run `git rebase --abort`.
 
+## Interactive
+Use `-i, --interactive` to make a list of commits to rebase.
+
+```bash
+# list the last 4 commits
+$ git rebase -i HEAD~4
+
+# choose pick/drop for each of the 4 (oldest on top)
+pick abc1234 Commit message 1
+pick def5678 Commit message 2  <- Change to 'pick' to 'drop' to remove
+pick ghi9012 Commit message 3  <- Change to 'pick' to 'drop' to remove
+pick jkl3456 Commit message 4
+```
+
 ## Resources
 - https://git-scm.com/docs/git-rebase
 - https://youtu.be/DkWDHzmMvyg?t=358

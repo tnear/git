@@ -11,6 +11,13 @@ M       hello.txt
 M       hello2.txt
 ```
 
+## Revert most recent commit
+This reverts the most recent commit and keeps those changes staged.
+
+```bash
+git reset --soft HEAD~1
+```
+
 ## Revert all modified files (**WARNING**: loses changes)
 ```bash
 $ git reset --hard
