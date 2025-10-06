@@ -2,8 +2,13 @@
 
 `git-diff` - Show changes between commits, commit and working tree, etc
 
-## Diff all unstaged files
+## Diff one file
+```bash
+$ git diff <file_name>
 ```
+
+## Diff all unstaged files
+```bash
 $ git diff
 diff --git a/file.txt b/file.txt
 index ce01362..97531f3 100644
@@ -14,7 +19,7 @@ index ce01362..97531f3 100644
 +hello2
 ```
 
-Annotated git diff output
+Annotated git diff output:
 ```
 a/file.txt:               version 'a' of file.txt (older)
 b/file.txt:               version 'b' of file.txt (newer)
@@ -25,10 +30,6 @@ index ce01362..97 100644: metadata
 +1,2 @@:                  '+' = version b, 2 = 2 different lines, 1 = starting line number
 ```
 
-## Diff one file
-```bash
-$ git diff <file_name>
-```
 
 ## Diff staged files
 By default, `git diff` does not diff stages files:
@@ -57,6 +58,7 @@ $ git diff 475c427..64aa946
 ```
 
 ## Compact-summary
+The `--compact-summary` shows files and number of lines changed without showing the contents.
 ```bash
 $ git diff --compact-summary
  hello.txt  | 1 +
@@ -89,6 +91,15 @@ git diff --no-prefix path/to/file
 
 # also prefixes and `index` line (useful for patches)
 git diff --no-prefix my/file.txt | sed '/^index /d' > my.patch
+```
+
+## Diff file in submodule
+```bash
+# change to submodule directory first
+cd my_submodule
+
+# run regula diff
+git diff path/to/file.txt
 ```
 
 ## Resources

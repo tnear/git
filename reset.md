@@ -2,17 +2,19 @@
 
 `git-reset` - Reset current HEAD to the specified state
 
+See also: [`git revert`](revert.md)
+
 ## Unstage all files
 Use `git reset` to unstage all files. This command is safe and no data is lost.
-```
+```bash
 $ git reset
 Unstaged changes after reset:
 M       hello.txt
 M       hello2.txt
 ```
 
-## Revert most recent commit
-This reverts the most recent commit and keeps those changes staged.
+## Reset to most recent commit
+This reverts the most recent commit and keeps those changes staged. `git reset` rewrites history, as if the commit never happened.
 
 ```bash
 git reset --soft HEAD~1
