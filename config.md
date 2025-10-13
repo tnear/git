@@ -28,5 +28,15 @@ By default, git uses a pager when listing branches. This config option changes t
 git config --global pager.branch false
 ```
 
+## Change text editor
+git uses `vim` by default. To change this editor, modify the `core.editor` field:
+```bash
+# vim
+git config --global core.editor "vim"
+
+# vscode (note the --wait parameter)
+git config --global core.editor "code --wait"
+```
+
 ## Resources
 - https://git-scm.com/docs/git-config

@@ -2,6 +2,10 @@
 
 `git-rebase` - Reapply commits on top of another base tip
 
+See also: [`merge-base`](merge-base.md)
+
+## Overview
+
 `git rebase` is useful for updating your changes when the `main` branch is updated by someone else. It follows these high-level steps:
 
 1. Takes your changes and sets them aside temporarily
@@ -46,6 +50,21 @@ pick abc1234 Commit message 1
 pick def5678 Commit message 2  <- Change to 'pick' to 'drop' to remove
 pick ghi9012 Commit message 3  <- Change to 'pick' to 'drop' to remove
 pick jkl3456 Commit message 4
+```
+
+### Squashing commits
+
+```bash
+# Find where you branched
+git merge-base main HEAD
+
+# Rebase from that point
+git rebase -i $(git merge-base main HEAD)
+
+# mark all commits except the first as 'squash'
+
+# force push to rewrite history
+git push --force-with-lease
 ```
 
 ## Resources
