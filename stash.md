@@ -4,6 +4,8 @@
 
 `git stash` is useful for saving changes locally without committing anything.
 
+See also: [`restore`](restore.md)
+
 ## Create stash
 Using the `-u` flag is recommended because it includes untracked files.
 ```bash

@@ -2,7 +2,7 @@
 
 `git-restore` - Restore working tree files
 
-**Note**: this command discards changes without prompting.
+**Note**: this command can discard changes without prompting.
 
 ## Delete changes
 ```bash
@@ -19,6 +19,15 @@ git restore *.txt                 # Restore all .txt files
 # Restore to staging area (staged changes)
 git restore --staged file.txt     # Unstage file.txt
 git restore --staged .            # Unstage all changes
+```
+
+## Apply specific files in a stash
+```bash
+# apply most recent stash
+git restore --source=stash -- path/to/file
+
+# apply specific stash
+git restore --source=stash@{2} -- path/to/file
 ```
 
 ## Resources
