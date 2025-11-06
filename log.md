@@ -21,11 +21,18 @@ $ git log <branch_name>
 
 # Limit date range:
 $ git log --after={2023-03-18} --before={2023-03-25}
+```
 
-# Search commit messages for string with 2+ digits.
-# Note: grep here does not supported extended-regexp (e.g., no '\d' or '{2}'):
+### Search commit history
+
+```bash
+# This searches the first line for strings with 2+ digits.
+# Note: grep does not support extended-regexp (e.g., no '\d' or '{2}'):
 $ git log --grep='[0-9][0-9]' --oneline
 87bf03d (HEAD -> main) Adding 123 file 5
+
+# this searches the entire commit history
+git log --all --grep='[0-9][0-9]'
 ```
 
 ### Draw textual graph of commit history
