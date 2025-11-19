@@ -19,6 +19,13 @@ $ git pull
 ### Conflict
 If there is a conflict, run `git rebase --abort`. Then, do a regular `git pull`.
 
+## Autostash
+Autostash will stash your changes, run `git pull`, then apply your stash.
+
+```bash
+git pull --rebase --autostash
+```
+
 ## Resources
 - https://git-scm.com/docs/git-pull
 - https://youtu.be/xN1-2p06Urc
