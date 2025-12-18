@@ -7,6 +7,8 @@ Revert adds a *new* commit which *undoes* a previous commit. Unlike `git checkou
 See also: [`git reset`](reset.md)
 
 ## Example
+Note: by default, `git revert` makes a local commit.
+
 ```bash
 # Assume hello.txt was created with "hello" then appended with "hello2":
 $ cat hello.txt
