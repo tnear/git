@@ -2,13 +2,25 @@
 
 `git-revert` - Revert some existing commits
 
-Revert adds a *new* commit which *undoes* a previous commit. Unlike `git checkout`, you can make additional changes after reverting. `git revert` *preserves* history, unlike `git reset`.
+Revert adds a *new* commit which *undoes* a previous commit. `git revert` *preserves* history, unlike `git reset`.
+
+Note: by default, `git revert` makes a local commit.
 
 See also: [`git reset`](reset.md)
 
-## Example
-Note: by default, `git revert` makes a local commit.
+## Revert without auto-committing
+```bash
+# revert most recent
+git revert HEAD --no-commit
 
+# revert multiple commits
+git revert abc1234 def5678 ghi9012 --no-commit
+
+# Revert a range of commits (oldest..newest)
+git revert abc1234..def5678 --no-commit
+```
+
+## Complete example
 ```bash
 # Assume hello.txt was created with "hello" then appended with "hello2":
 $ cat hello.txt
@@ -31,11 +43,6 @@ $ git log --oneline
 ac8e310 (HEAD -> main) Revert "hello2"
 39e07ac hello2
 22f3e1c hello
-```
-
-## Revert most recent commit without auto-committing
-```bash
-git revert --no-commit HEAD
 ```
 
 ## Resources
