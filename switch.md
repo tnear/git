@@ -2,6 +2,8 @@
 
 `git-switch` - Switch branches
 
+See also: [`checkout`](checkout.md)
+
 ## Switch branch
 ```bash
 # list branches
@@ -25,6 +27,9 @@ $ git switch -c anotherNewBranch
 
 Switched to a new branch 'anotherNewBranch'
 ```
+
+## Switch to previous branch
+Use `git switch -`. Inspired by bash, `cd -`.
 
 ## Resources
 - https://git-scm.com/docs/git-switch

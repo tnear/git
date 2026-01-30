@@ -2,6 +2,8 @@
 
 `git-checkout` - Switch branches or restore working tree files
 
+See also: [`switch`](switch.md)
+
 ## Checkout branch
 ```bash
 $ git checkout <branch_name>
@@ -44,6 +46,12 @@ Switched to a new branch 'myNewBranch'
 $ git branch  # Verify myNewBranch was created and is active
   main
 * myNewBranch
+```
+
+## Deleting branch
+Use `-d` to delete a branch.
+```bash
+$ git branch -d <branch_name>
 ```
 
 ## Checking out tags
