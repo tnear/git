@@ -16,11 +16,18 @@ git stash -u
 git stash apply
 ```
 
-## Create stash with name
+### Specify stash name
 This is a useful way to identify what a stash contains. Use the `-m` flag to add a message.
 
 ```bash
 git stash -u -m 'my stash'
+git stash -um 'my stash'  # combine flags
+```
+
+### Stash specific file
+Use `git stash push` then path to file.
+```bash
+$ git stash push -um 'msg' -- path/to/file
 ```
 
 ## List stashes

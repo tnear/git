@@ -24,14 +24,15 @@ To https://github.com/tnear/git.git
 $ git push origin <branch_name>
 ```
 
-## `-f, --force`
+## Force pushing
+### `-f, --force` (not recommended)
 Allows overwriting the remote branch with your local branch, even if they have diverged.
 
 ```bash
 git push -f origin myBranch
 ```
 
-### `--force-with-lease`
+### `--force-with-lease` (recommended)
 This flag allows force pushing changes to a remote branch, but only if the remote branch is in the state you expect. This prevents accidental overwriting of changes made by others.
 
 It can be useful after [rebasing](rebase.md).
