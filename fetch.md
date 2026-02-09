@@ -5,7 +5,7 @@
 `git fetch` downloads all commits, files, and refs from a remote repository into your local repository. Fetch does not require you to merge any changes. It has no impact on your local work.
 
 ## Basic usage
-```
+```bash
 $ git fetch
 remote: Enumerating objects: 5, done.
 remote: Counting objects: 100% (5/5), done.

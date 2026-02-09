@@ -4,7 +4,7 @@
 
 ## Show most recent changes
 Use `git show` with no arguments:
-```
+```bash
 git show
 commit d84f426e458adad490d4786aee9adb7899bc1459 (HEAD -> main, origin/main, origin/HEAD)
 Author: name <email>

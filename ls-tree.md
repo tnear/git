@@ -3,7 +3,7 @@
 `git-ls-tree` - List the contents of a tree object
 
 ## List all files
-```
+```bash
 $ git ls-tree HEAD
 
 100644 blob a40258339139515715734ed7b3a74d940bc8cfcb    README.md
@@ -15,12 +15,12 @@ $ git ls-tree HEAD
 ```
 
 ### Show content of a file
-Take a checksum from the previous command and use `git show`.
+Use `git show <commit_checksum>`.
 
-```
-$ git show a402
+```bash
+$ git show a40258
 
-## git
+# file contents here
 ```
 
 ## Resources

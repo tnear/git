@@ -60,7 +60,8 @@ Checking out a tag puts your repository in a 'detached HEAD' state. See [`git ta
 ```bash
 $ git checkout v2.0.0
 
-# undo operation when done
+# undo operation when done by switching
+# to previous branch
 $ git switch -
 ```
 

@@ -3,7 +3,7 @@
 `git-remote` - Manage set of tracked repositories
 
 ## Show name
-```
+```bash
 $ git remote
 origin
 ```
