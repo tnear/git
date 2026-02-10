@@ -69,8 +69,18 @@ $ git log myDir/
 
 ## Show most recent commits
 ```bash
-# Show 3 most recent commits:
+# show 3 most recent commits
 $ git log -3
+```
+
+## Show renames
+A number such as `R100` indicates a rename with 100% similarity.
+```bash
+$ git log --name-status
+
+commit abc123
+    Rename file
+R100    path/old.txt  path/new.txt
 ```
 
 ## Resources
