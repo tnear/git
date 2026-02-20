@@ -2,16 +2,18 @@
 
 `git-mv` - Move or rename a file, a directory, or a symlink
 
-## Rename file: file.txt to file_new.txt
+## Basic usage
 ```bash
+# rename file.txt to file_new.txt
 $ git mv file.txt file_new.txt
+
 # Status will show 'renamed' status:
 $ git status
 Changes to be committed:
         renamed:    file.txt -> file_new.txt
 ```
 
-## Move file into sub-directory
+### Move file into sub-directory
 ```bash
 $ mkdir newDirectory
 $ git mv file.txt newDirectory
