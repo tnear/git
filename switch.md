@@ -2,7 +2,7 @@
 
 `git-switch` - Switch branches
 
-See also: [`checkout`](checkout.md)
+See also: [`branch`](branch.md)
 
 ## Switch branch
 ```bash
