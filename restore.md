@@ -6,8 +6,7 @@
 
 ## Delete changes
 ```bash
-git restore file.txt              # discard changes to file.txt
-git restore src/path/to/file.txt  # full path
+git restore src/path/to/file.txt  # discard changes
 
 # Restore multiple files
 git restore file1.txt file2.txt
@@ -28,6 +27,12 @@ git restore --source=stash -- path/to/file
 
 # apply specific stash
 git restore --source=stash@{2} -- path/to/file
+```
+
+## Restore changes to earlier commit
+```bash
+# restore a file back to its state in 'main' branch
+git restore --source=main path/to/file
 ```
 
 ## Resources

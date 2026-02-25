@@ -23,6 +23,9 @@ If there is a conflict, run `git rebase --abort`. Then, do a regular `git pull`.
 Autostash will stash your changes, run `git pull`, then apply your stash.
 
 ```bash
+git pull --autostash
+
+# with rebase
 git pull --rebase --autostash
 ```
 
