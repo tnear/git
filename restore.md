@@ -2,6 +2,8 @@
 
 `git-restore` - Restore working tree files
 
+`git restore` is the modern way to undo changes in files without affecting commit history.
+
 **Note**: this command can discard changes without prompting.
 
 ## Delete changes

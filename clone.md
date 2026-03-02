@@ -7,6 +7,7 @@ Clones a repository. Navigate one folder up from where you want it.
 
 ```bash
 $ git clone remote_repository_location
+$ git clone remote_repository_location directory_name
 $ git clone remote_repository_location path/to/directory
 ```
 

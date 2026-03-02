@@ -2,8 +2,12 @@
 
 `git-diff` - Show changes between commits, commit and working tree, etc
 
-## Diff one file
+## Basic usage
 ```bash
+# all files
+$ git diff
+
+# specified file
 $ git diff <file_name>
 ```
 
