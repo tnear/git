@@ -83,5 +83,12 @@ commit abc123
 R100    path/old.txt  path/new.txt
 ```
 
+## Show commits on main which are not on your branch
+This is useful to see which commits your branch is behind from main.
+
+```bash
+$ git log my_branch..main --oneline
+```
+
 ## Resources
 - https://git-scm.com/docs/git-log

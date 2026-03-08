@@ -34,7 +34,6 @@ index ce01362..97 100644: metadata
 +1,2 @@:                  '+' = version b, 2 = 2 different lines, 1 = starting line number
 ```
 
-
 ## Diff staged files
 By default, `git diff` does not diff stages files:
 ```bash
