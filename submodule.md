@@ -5,7 +5,7 @@
 A submodule is a git repository which is a sub-directory of another git repository.
 
 ## Initialize
-`git submodule update --init` will initialize initializes repositories defined in `.gitmodules`.
+`git submodule update --init` initializes repositories defined in `.gitmodules`.
 
 `git submodule update --init --recursive` initializes nested submodules.
 

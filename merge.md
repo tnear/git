@@ -55,7 +55,7 @@ $ git log --oneline
 5323f9b hello
 ```
 
-## Abort a merge
+### Abort a merge
 ```bash
 # --abort = abort (cancel) the current conflict resolution process
 $ git merge --abort
@@ -70,6 +70,12 @@ git switch main
 git pull
 git switch featureBranch
 git merge main # merge main into your feature branch
+```
+
+## Squashing merge
+To combine all commits into one when merging, use `--squash`.
+```bash
+$ git merge --squash
 ```
 
 ## Resources
