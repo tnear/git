@@ -48,5 +48,16 @@ stash@{1}: On main: my second line
 $ git stash apply 1
 ```
 
+## Stash submodules
+
+```bash
+# stash current repo + all submodules with custom message
+git stash push -u -m 'your message' && git submodule foreach --recursive 'git stash push -u -m "your message" || :'
+
+# apply all
+git submodule foreach --recursive 'git stash pop || :' && git stash pop
+```
+
+
 ## Resources
 - https://git-scm.com/docs/git-stash
