@@ -101,7 +101,7 @@ git diff --no-prefix my/file.txt | sed '/^index /d' > my.patch
 # change to submodule directory first
 cd my_submodule
 
-# run regula diff
+# perform regular diff
 git diff path/to/file.txt
 ```
 

@@ -58,6 +58,5 @@ git stash push -u -m 'your message' && git submodule foreach --recursive 'git st
 git submodule foreach --recursive 'git stash pop || :' && git stash pop
 ```
 
-
 ## Resources
 - https://git-scm.com/docs/git-stash
