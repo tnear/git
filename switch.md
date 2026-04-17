@@ -31,5 +31,8 @@ Switched to a new branch 'anotherNewBranch'
 ## Switch to previous branch
 Use `git switch -`. Inspired by bash, `cd -`.
 
+## Detached head
+To resolve message "HEAD detached at ...", run `git switch <branch>`
+
 ## Resources
 - https://git-scm.com/docs/git-switch

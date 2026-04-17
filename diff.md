@@ -2,6 +2,8 @@
 
 `git-diff` - Show changes between commits, commit and working tree, etc
 
+In Git, a "hunk" is a contiguous block of changes within a file. When running `git diff`, Git groups modified lines together into these sections.
+
 ## Basic usage
 ```bash
 # all files
