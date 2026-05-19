@@ -76,35 +76,37 @@ Use the `--shortstat` flag.
 
 ```bash
 # to include untracked files, add all files first
-git add .
+$ git add .
 
 # use --cached to include untracked (new) files
-git diff --shortstat --cached
-
+$ git diff --shortstat --cached
  13 files changed, 403 insertions(+), 1 deletion(-)
+
+# diff against branch (main)
+$ git diff --shortstat main
 ```
 
 ## Diff a file with particular branch
 ```bash
 # diff a file with main
-git diff main -- path/to/file
+$ git diff main -- path/to/file
 ```
 
 ## Remove `a/` and `b/` prefixes
 ```bash
-git diff --no-prefix path/to/file
+$ git diff --no-prefix path/to/file
 
 # also prefixes and `index` line (useful for patches)
-git diff --no-prefix my/file.txt | sed '/^index /d' > my.patch
+$ git diff --no-prefix my/file.txt | sed '/^index /d' > my.patch
 ```
 
 ## Diff file in submodule
 ```bash
 # change to submodule directory first
-cd my_submodule
+$ cd my_submodule
 
 # perform regular diff
-git diff path/to/file.txt
+$ git diff path/to/file.txt
 ```
 
 ## Resources
