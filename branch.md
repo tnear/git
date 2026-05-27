@@ -25,7 +25,7 @@ $ git switch myNewBranch
 ```
 
 ## Delete branch
-Use the `-d` flag to delete a branch (`-D` forces).
+Use the `-d` flag to delete (remove) a branch (`-D` forces).
 
 ```bash
 # First, switch away from branch to be deleted (branchToDelete)

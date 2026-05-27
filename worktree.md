@@ -26,9 +26,10 @@ $ git worktree remove <path_to_worktree>
 $ git worktree prune
 ```
 
-## Advantages separate `git clone`
-- Using `git switch` to switch to another branch already in the worktree errors. This prevents two directories with the same branch.
+## Advantages over `git clone`
+- Attempting `git switch` to switch to another branch already in the worktree errors. This prevents two directories with the same branch.
 - Uses a single `.git` folder to save disk space
+- git stashes are shared across worktrees
 
 ## Resources
 - https://git-scm.com/docs/git-worktree
