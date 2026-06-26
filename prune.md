@@ -8,7 +8,7 @@ See also: [`gc`](gc.md)
 `git prune` removes unreachable Git objects from your local repository database. Typically, users should run `git gc` instead of `git prune`.
 
 ### Unreachable objects
-Git stores commits, trees, blobs, and tags as objects. Normally, objects are reachable from refs like branches, tags, reflog. An object becomes *unreachable* when noting points to it anymore.
+Git stores commits, trees, blobs, and tags as objects. Normally, objects are reachable from refs like branches, tags, reflog. An object becomes *unreachable* when nothing points to it anymore.
 
 For example:
 ```bash
